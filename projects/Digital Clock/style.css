@@ -13,15 +13,18 @@ body {
     font-family: monospace;
     background-color: #fbb041;
     color: white;
+}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 140px;
+    gap: 80px;
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: clamp(50px, 6vw, 100px);
     color: #51a3fa;
 }
@@ -65,6 +68,10 @@ h1 {
     box-shadow: 0 0 10px white;
     background-color: #E5E4E4;
     transition: all 0.3s ease-in-out;
+}
+
+.footer-gap {
+    height: 10px;
 }
 
 @media (max-width: 450px) {
