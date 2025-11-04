@@ -12,14 +12,17 @@ html, body {
 body {
     background-color: #222343;
     color: #e5e4e4;
-    display: grid;
-    grid-template-rows: 100px repeat(3, 1fr) 200px;
+    display: flex;
     justify-content: center;
+}
+
+main {
+    margin-top: 70px;
+    height: auto;
 }
 
 h1 {
     font-size: clamp(2rem, 3.3vw, 4rem);
-    grid-row: 2/3;
     justify-self: center;
     margin-bottom: 40px;
 }
@@ -32,7 +35,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-row: 3/4;
     justify-self: center;
 }
 
@@ -68,7 +70,6 @@ h1 {
 }
 
 .controls {
-    grid-row: 4/5;
     margin-top: 20px;
     justify-self: center;
     display: flex;
@@ -87,7 +88,7 @@ h1 {
 
 .wrapper {
     position: relative; 
-    height: 35px;
+    height: auto;
 }
 
 .wrapper::after {
@@ -107,10 +108,12 @@ h1 {
 }
 
 .wrapper:hover:after {
-    transform: translateY(45px) translateX(-50%);
+    transform: translateY(40px) translateX(-50%);
     opacity: 1;
 }
 
-
+.footer-gap {
+    height: 50px;
+}
 
 

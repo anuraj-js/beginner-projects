@@ -8,28 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Countdown Timer <span class="icon"><i class="fa-solid fa-hourglass-half"></i></span></h1>
+    <main>
+        <h1>Countdown Timer <span class="icon"><i class="fa-solid fa-hourglass-half"></i></span></h1>
 
-    <div class="input-output-container">
-        <input type="number" min="0" max="23" class="input display" id="hrs-input" placeholder="00"> <span class="colon">:</span>
-        <input type="number" min="0" max="59" class="input display" id="mins-input" placeholder="00"> <span class="colon">:</span>
-        <input type="number" min="0" max="59" class="input display" id="secs-input" placeholder="00">
-    </div>
-
-    <div class="controls">
-        <div name="Pause" class="wrapper">
-            <button class="pause-btn"><i class="fa-solid fa-pause"></i></button>
-        </div>
-    
-
-        <div name="Play" class="wrapper">
-            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+        <div class="input-output-container">
+            <input type="number" min="0" max="23" class="input display" id="hrs-input" placeholder="00"> <span class="colon">:</span>
+            <input type="number" min="0" max="59" class="input display" id="mins-input" placeholder="00"> <span class="colon">:</span>
+            <input type="number" min="0" max="59" class="input display" id="secs-input" placeholder="00">
         </div>
 
-        <div name="Reset" class="wrapper">
-            <button class="reset-btn"><i class="fa-solid fa-clock-rotate-left"></i></button>
+        <div class="controls">
+            <div name="Pause" class="wrapper">
+                <button class="pause-btn"><i class="fa-solid fa-pause"></i></button>
+            </div>
+        
+
+            <div name="Play" class="wrapper">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+
+            <div name="Reset" class="wrapper">
+                <button class="reset-btn"><i class="fa-solid fa-clock-rotate-left"></i></button>
+            </div>
         </div>
-    </div>
+
+        <div class="footer-gap"></div>
+    </main>
 
 
     <script src="script.js"></script>
