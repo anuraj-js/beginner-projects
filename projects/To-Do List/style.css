@@ -91,6 +91,10 @@ h1 {
     padding: 0 8px;
 }
 
+.footer-gap {
+    height: 100px;
+}
+
 
 @media (max-width: 640px) {
     .input,
