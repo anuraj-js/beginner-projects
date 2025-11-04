@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="parent">
+        <div class="calculation-display"></div>
+        <div class="child">
+            <button onclick="calculationFun('7')">7</button>
+            <button onclick="calculationFun('8')">8</button>
+            <button onclick="calculationFun('9')">9</button>
+            <button onclick="calculationFun(' / ')" class="sign"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="child">
+            <button onclick="calculationFun('4')">4</button>
+            <button onclick="calculationFun('5')">5</button>
+            <button onclick="calculationFun('6')">6</button>
+            <button onclick="calculationFun(' * ')" class="sign"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="child">
+            <button onclick="calculationFun('1')">1</button>
+            <button onclick="calculationFun('2')">2</button>
+            <button onclick="calculationFun('3')">3</button>
+            <button onclick="calculationFun(' - ')" class="sign"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="child">
+            <button onclick="calculationFun('0')">0</button>
+            <button onclick="calculationFun('.')">.</button>
+            <button onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+            <button onclick="calculationFun(' + ')" class="sign"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="child">
+            <button onclick="clearCalculation()"><i class="fa-solid fa-c"></i></button>
+            <button onclick="deleteFun()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

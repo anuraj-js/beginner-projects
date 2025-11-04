@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #2E0249;
+    color: #C8BDB0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: clamp(40px, 3.5vw, 65px);
+    margin-top: 70px;
+}
+
+.stopwatch-display {
+    background-color: #570A57;
+    font-size: clamp(40px, 3.5vw, 65px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.laps-display {
+    font-size: clamp(18px, 1.2vw, 28px);
+    margin-top: 20px;
+    max-height: 40vh;
+    width: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.laps-display::-webkit-scrollbar {
+    width: 8px;  
+}
+
+.laps-display::-webkit-scrollbar-track {
+    background: #570A57;     /* track color */
+    border-radius: 5px;
+}
+
+.laps-display::-webkit-scrollbar-thumb {
+    background-color: #ad9cb3; /* thumb color */
+    border-radius: 5px;
+    border: 2px solid #570A57; /* gives a nice padding effect */
+}
+
+.laps-display p {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.laps-overload-display {
+    font-size: clamp(12px, 1vw, 20px);
+    margin-top: 10px;
+    color: #f44040;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ad9cb3;
+    color: #48106a;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    height: 45px;
+    width: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-tab-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-tab-2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lap-inactive {
+    color: #191818;
+    background-color: #676767;
+}
+
+@media (orientation: landscape) {
+    .laps-display {
+        max-height: 30vh; /* smaller so it fits in landscape */
+    }
+}
+
+
