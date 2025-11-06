@@ -79,6 +79,7 @@ resetBtn.addEventListener('click', () => {
     lapsDisplay.innerHTML = '';
     lapsOverloadDisplay.textContent = '';
     lapBtn.classList.remove('lap-inactive');
+    lapBtn.classList.add('btn');
 
     refreshStopwatch();
 });
@@ -92,6 +93,7 @@ lapBtn.addEventListener('click', () => {
     if (laps.length >= 10) {
         lapsOverloadDisplay.innerHTML = `<strong>Maximum 10 laps reached.</strong> Tap 'Reset Laps' to add more.`;
         lapBtn.classList.add('lap-inactive');
+        lapBtn.classList.remove('btn');
         return;
     } 
 
@@ -112,6 +114,7 @@ resetLapsBtn.addEventListener('click', () => {
     lapsDisplay.innerHTML = '';
     lapsOverloadDisplay.textContent = '';
     lapBtn.classList.remove('lap-inactive');
+    lapBtn.classList.add('btn');
 })
 
 
